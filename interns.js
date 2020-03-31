@@ -1,8 +1,10 @@
-let MongoClient = require('mongodb').MongoClient
-let url = 'mongodb://localhost:27017/bcj'
+const MongoClient = require('mongodb').MongoClient
+const dbo = db.db('bcj')
+const db = 'mongodb://localhost:27017/bcj'
 
-MongoClient.connect(url, { useUnifiedTopology: true }, (err, db) => {
-  if (err) throw err
-  console.log('Interns collection created')
-  db.close()
+MongoClient.connect(dbo, { useUnifiedTopology: true }, (err, dbo) => {
+  dbo.createCollection([interns], (err, res) => {
+    if (err) throw err
+    console.log('Interns collection created')
+  })
 })
