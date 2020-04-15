@@ -1,0 +1,6 @@
+![alt text](images/insertMany.png)
+![alt text](images/myMovies.png)
+![alt text](images/firstDocument.png)
+![alt text](images/rating.png)
+![alt text](images/projection.png)
+![alt text](images/updateInterns.png)
